@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Définition des variables (idéalement à charger depuis l'environnement)
+USERNAME="MilleCheque"
+# Récupération du token depuis une variable d'environnement sécurisée
+PASSWORD="${token_ProjetLAOA23}"
+
+# Exécution du push en injectant les variables dans l'URL distante
+git push https://${USERNAME}:${PASSWORD}@github.com/MilleCheque/Projet_LAOA23_Qt.git
